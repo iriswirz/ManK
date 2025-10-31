@@ -23,7 +23,7 @@
 <body class="flex items-center justify-center min-h-screen p-6 text-gray-900">
 
   <main class="bg-[#fff5e1] rounded-3xl shadow-2xl max-w-md w-full p-8 space-y-8 text-center border border-[#e6decf]">
-    
+
     <!-- Profil / Titel -->
     <header>
       <img src="https://static.wixstatic.com/media/81fc74_388143d4626c4b42bc9329b73cdd166a~mv2.jpg/v1/fill/w_954,h_954,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/img_team_003.jpg" 
@@ -47,15 +47,16 @@
       </div>
     </section>
 
-    <!-- Präsentation -->
+    <!-- Google Slides Präsentation (automatisch startend & loopend) -->
     <section>
-      <div class="aspect-video rounded-xl overflow-hidden shadow-lg">
+      <div class="w-full max-w-md mx-auto overflow-hidden rounded-xl shadow-lg" style="aspect-ratio:16/9;">
         <iframe
           class="w-full h-full"
-          src="https://onedrive.live.com/embed?cid=DEINE_CID&id=DEINE_ID&resid=DEINE_RES_ID&em=2"
-          title="Meine Präsentation"
+          src="https://docs.google.com/presentation/d/e/2PACX-1vSpFZ7-vj_1dbQwTX06XX_D6Pc1coTjgc3leNAvg9JClqrpKLT5NBDCVd-_atYtWO1hV1_6YA-TXHKX/pubembed?start=true&loop=true&delayms=3000"
           frameborder="0"
-          allowfullscreen>
+          allowfullscreen
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true">
         </iframe>
       </div>
     </section>
@@ -71,7 +72,7 @@
         📸 Instagram
       </a>
       <a href="mailto:info@mehr-als-nur-klettern.ch"
-         class="block w-full py-3 rounded-xl shadow btn-hover text-gray-900 bg-gray-400 hover:bg-gray-500">
+         class="block w-full py-3 rounded-xl shadow btn-hover text-gray-900 bg-white hover:bg-gray-200">
         ✉️ E-Mail
       </a>
       <a href="https://facebook.com/MehralsnurKlettern.ManK" target="_blank"
