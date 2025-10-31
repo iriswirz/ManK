@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inklusion im Klettersport</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Sanfter Hover-Glow für Buttons */
+    .btn-hover {
+      transition: all 0.3s ease;
+    }
+    .btn-hover:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    body {
+      background: linear-gradient(135deg, #009993, #ab688c);
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-6 text-gray-900">
+
+  <main class="bg-[#fff5e1] rounded-3xl shadow-2xl max-w-md w-full p-8 space-y-8 text-center border border-[#e6decf]">
+    
+    <!-- Profil / Titel -->
+    <header>
+      <img src="https://static.wixstatic.com/media/81fc74_388143d4626c4b42bc9329b73cdd166a~mv2.jpg/v1/fill/w_954,h_954,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/img_team_003.jpg" 
+           alt="Profilbild" 
+           class="mx-auto rounded-full shadow-md mb-4 w-32 h-32">
+      <h1 class="text-2xl sm:text-3xl font-semibold">Inklusion im Klettersport</h1>
+      <p class="text-gray-600 text-sm sm:text-base mt-1">Video • Präsentation • Social Links</p>
+    </header>
+
+    <!-- Video -->
+    <section>
+      <div class="aspect-video rounded-xl overflow-hidden shadow-lg">
+        <iframe 
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/DEIN_VIDEO_ID"
+          title="Mein Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Präsentation -->
+    <section>
+      <div class="aspect-video rounded-xl overflow-hidden shadow-lg">
+        <iframe
+          class="w-full h-full"
+          src="https://onedrive.live.com/embed?cid=DEINE_CID&id=DEINE_ID&resid=DEINE_RES_ID&em=2"
+          title="Meine Präsentation"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="space-y-3">
+      <a href="https://linkedin.com/in/caro-käser-a38bb4184" target="_blank"
+         class="block w-full py-3 rounded-xl shadow btn-hover text-white bg-[#0077B5] hover:bg-[#005f8d]">
+        💼 LinkedIn
+      </a>
+      <a href="https://instagram.com/mehralsnurklettern.mank" target="_blank"
+         class="block w-full py-3 rounded-xl shadow btn-hover text-white bg-gradient-to-r from-[#f58529] via-[#dd2a7b] to-[#8134af] hover:brightness-110">
+        📸 Instagram
+      </a>
+      <a href="mailto:info@mehr-als-nur-klettern.ch"
+         class="block w-full py-3 rounded-xl shadow btn-hover text-gray-900 bg-gray-300 hover:bg-gray-400">
+        ✉️ E-Mail
+      </a>
+      <a href="https://facebook.com/MehralsnurKlettern.ManK" target="_blank"
+         class="block w-full py-3 rounded-xl shadow btn-hover text-white bg-[#4267B2] hover:bg-[#314f86]">
+        👍 Facebook
+      </a>
+      <a href="https://www.mehr-als-nur-klettern.ch" target="_blank"
+         class="block w-full py-3 rounded-xl shadow btn-hover text-gray-900 bg-[#ffcc66] hover:bg-[#e6b800]">
+        🌐 Website
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-gray-600 text-xs mt-8">
+      © 2025 – ManK – Mehr als nur Klettern
+    </footer>
+  </main>
+
+</body>
+</html>
