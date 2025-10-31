@@ -6,7 +6,6 @@
   <title>Inklusion im Klettersport</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Sanfter Hover-Glow für Buttons */
     .btn-hover {
       transition: all 0.3s ease;
     }
@@ -14,7 +13,6 @@
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
-
     body {
       background: linear-gradient(135deg, #009993, #ab688c);
     }
@@ -22,7 +20,7 @@
 </head>
 <body class="flex items-center justify-center min-h-screen p-6 text-gray-900">
 
-  <main class="bg-[#fff5e1] rounded-3xl shadow-2xl max-w-md w-full p-8 space-y-8 text-center border border-[#e6decf]">
+  <main class="bg-[#fff5e1] rounded-3xl shadow-2xl max-w-4xl w-full p-8 space-y-8 text-center border border-[#e6decf]">
 
     <!-- Profil / Titel -->
     <header>
@@ -47,9 +45,9 @@
       </div>
     </section>
 
-    <!-- Google Slides Präsentation (automatisch startend & loopend) -->
+    <!-- Google Slides Präsentation (mobil volle Breite) -->
     <section>
-      <div class="w-full max-w-md mx-auto overflow-hidden rounded-xl shadow-lg" style="aspect-ratio:16/9;">
+      <div class="w-full mx-auto overflow-hidden rounded-xl shadow-lg" style="aspect-ratio:16/9; max-width:100%;">
         <iframe
           class="w-full h-full"
           src="https://docs.google.com/presentation/d/e/2PACX-1vSpFZ7-vj_1dbQwTX06XX_D6Pc1coTjgc3leNAvg9JClqrpKLT5NBDCVd-_atYtWO1hV1_6YA-TXHKX/pubembed?start=true&loop=true&delayms=3000"
@@ -59,6 +57,12 @@
           webkitallowfullscreen="true">
         </iframe>
       </div>
+
+      <!-- Fullscreen-Link für Mobilgeräte -->
+      <a href="https://docs.google.com/presentation/d/e/2PACX-1vSpFZ7-vj_1dbQwTX06XX_D6Pc1coTjgc3leNAvg9JClqrpKLT5NBDCVd-_atYtWO1hV1_6YA-TXHKX/view" target="_blank"
+         class="block mt-2 w-full max-w-md mx-auto py-3 rounded-xl shadow btn-hover text-white bg-gray-700 hover:bg-gray-800">
+         Präsentation in Google Slides öffnen
+      </a>
     </section>
 
     <!-- Social Links -->
